@@ -14,6 +14,11 @@ from urllib3 import disable_warnings, exceptions
 from api.answer_check import *
 from api.logger import logger
 
+- name: Set up Python
+  uses: actions/setup-python@v4
+  with:
+    python-version: '3.10'
+
 # 关闭警告
 disable_warnings(exceptions.InsecureRequestWarning)
 
